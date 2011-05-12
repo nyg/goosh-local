@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>goosh.org - the unofficial google shell</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="goosh is a google-interface that behaves similar to a unix-shell." />
+		<meta name="keywords" content="google, shell, google shell, commandline, cli, bash, interface, ajax, api, unix, search" />
+		<meta name="author" content="Stefan Grothkopp" />
+		
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="main" charset="utf-8" />
+		
+		<script type="text/javascript">
+			/*
+				Goosh.org (c) 2008 - Stefan Grothkopp
+			
+				This script is a google-interface that behaves similar to a unix-shell.
+			
+				goosh is written by Stefan Grothkopp (grothkopp (at) gmail (dot) com)
+				it is NOT an official google product!
+			
+				If you want to extend goosh.org, please take a look at the load command.
+				You can see an example module at http://goosh.org/ext/spon.js
+			
+				Uncompressed source can be found at:
+				http://code.google.com/p/goosh/
+				Instructions for svn access are at:
+				http://code.google.com/p/goosh/source/checkout
+			
+				If you have problems/bug reports/etc please write me an email.
+			*/
+		
+			var goosh = new Object();
+			goosh.lib = new Object();
+		</script>
+		
+		<script src="lib/namespace.js" type="text/javascript"></script>
+		<script src="lib/in_array.js" type="text/javascript"></script>
+		<script src="lib/chop.js" type="text/javascript"></script>
+		<script src="lib/get.js" type="text/javascript"></script>
+		<script src="lib/cookie.js" type="text/javascript"></script>
+		
+		<script src="lang/lang.js" type="text/javascript"></script>
+		<script src="gui/gui.js" type="text/javascript"></script>
+		<script src="set/set.js" type="text/javascript"></script>
+		<script src="ajax/ajax.js" type="text/javascript"></script>
+		<script src="config/config.js" type="text/javascript"></script>
+		<script src="lib/keyboard.js" type="text/javascript"></script>
+		<script src="modules/modules.js" type="text/javascript"></script>
+		
+		<script src="module/web.js" type="text/javascript"></script>
+		<script src="module/addengine.js" type="text/javascript"></script>
+		<script src="module/blogs.js" type="text/javascript"></script>
+		<script src="module/calc.js" type="text/javascript"></script>
+		<script src="module/cd.js" type="text/javascript"></script>
+		<script src="module/clear.js" type="text/javascript"></script>
+		<script src="module/feed.js" type="text/javascript"></script>
+		<script src="module/go.js" type="text/javascript"></script>
+		<script src="module/help.js" type="text/javascript"></script>
+		<script src="module/images.js" type="text/javascript"></script>
+		<script src="module/inurl.js" type="text/javascript"></script>
+		<script src="module/load.js" type="text/javascript"></script>
+		<script src="module/ls.js" type="text/javascript"></script>
+		<script src="module/lucky.js" type="text/javascript"></script>
+		<script src="module/more.js" type="text/javascript"></script>
+		<script src="module/news.js" type="text/javascript"></script>
+		<script src="module/open.js" type="text/javascript"></script>
+		<script src="module/place.js" type="text/javascript"></script>
+		<script src="module/read.js" type="text/javascript"></script>
+		<script src="module/settings.js" type="text/javascript"></script>
+		<script src="module/translate.js" type="text/javascript"></script>
+		<script src="module/video.js" type="text/javascript"></script>
+		<script src="module/wiki.js" type="text/javascript"></script>
+		
+		<script src="module-exp/gmail.js" type="text/javascript"></script>
+		<script src="module-exp/login.js" type="text/javascript"></script>
+		<script src="module-exp/logout.js" type="text/javascript"></script>
+		
+		<script src="goosh.js" type="text/javascript"></script>
+	</head>
+	
+	<body id="body">
+		<div id="output">
+		</div>
+		
+		<div id="input">
+			<form name='f' onsubmit='return false;' class='cmdline' action=''>
+				<table class="inputtable">
+					<tr>
+						<td>
+							<div id='prompt' class='less'></div>
+						</td>
+						<td class="inputtd">
+							<input id='inputfield' name='q' type='text' class='cmdline' autocomplete='off' value="" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+	
+</html>

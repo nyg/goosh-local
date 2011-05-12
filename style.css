@@ -1,0 +1,115 @@
+html
+{
+	height: 100%;
+}
+
+body
+{
+	font-size: 12px;
+	font-family: monospace;
+	height: 99%;
+	margin:0px;
+	padding: 0px;
+}
+
+form
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+pre
+{
+	font-size: 12px;
+}
+
+br
+{
+	clear: both;
+}
+
+:focus
+{
+	outline: 0;
+}
+
+input.cmdline
+{
+	border: none;
+	border: 0px;
+	font-size: 12px;
+	font-family: monospace;
+	padding: 0px;
+	margin:0px;
+	width:100%;
+}
+
+table.inputtable
+{
+	width:100%;
+	vertical-align:top;
+}
+
+td.inputtd
+{
+	width:100%;
+}
+
+#input
+{
+	margin-left: 8px;
+	color: #666;
+	overflow: hidden;
+}
+
+#output
+{
+	margin-left: 8px;
+	margin-top: 8px;
+}
+
+.less
+{
+	color: #666;
+}
+
+.info
+{
+	color: #090;
+}
+
+table
+{
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+td
+{
+	padding: 0px;
+	margin: 0px;
+	vertical-align: top;
+	font-size: 12px;
+	font-family: monospace;
+}
+
+.help td
+{
+	padding-right: 25px;
+	font-size: 12px;
+}
+
+div#prompt
+{
+	display: inline;
+	white-space:nowrap;
+	padding:0px;
+	margin:0px;
+}
+
+img
+{
+	border: none;
+}
